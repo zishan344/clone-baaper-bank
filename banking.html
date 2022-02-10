@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>baper-Bank</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-5xl font-sembold mt-8">
+        Let get some <span class="text-purple-600">mooony</span>!!!!
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <section class="grid grid-cols-3 gap-4 mt-8">
+        <div class="bg-blue-300 p-8 rounded">
+          <h1 class="text-2xl text-white">Deposit</h1>
+          <h2 class="text-4xl text-white">
+            $<span id="deposit-total">00</span>
+          </h2>
+        </div>
+        <div class="bg-lime-500 p-8 rounded">
+          <h1 class="text-2xl text-white">Withdraw</h1>
+          <h2 class="text-4xl text-white">
+            $<span id="withdrow-total">00</span>
+          </h2>
+        </div>
+        <div class="bg-green-600 p-8 rounded">
+          <h1 class="text-2xl text-white">Balance</h1>
+          <h2 class="text-4xl text-white">
+            $<span id="balance-total">1200</span>
+          </h2>
+        </div>
+      </section>
+
+      <section class="grid grid-cols-2 gap-4 my-8">
+        <div class="rounded p-8 bg-red-300">
+          <h2 class="text-2xl font-semibold">Please Deposit</h2>
+          <div class="mt-4">
+            <input
+              id="deposit-input"
+              class="w-3/4 px-2 block border border-gray-400 rounded mb-4"
+              type="text"
+              placeholder="$ amount you want to deposit "
+            />
+            <button
+              id="deposit-btn"
+              class="bg-yellow-500 px-4 py-2 font-semibold text-white rounded"
+            >
+              deposit
+            </button>
+          </div>
+        </div>
+
+        <div class="rounded p-8 bg-orange-400">
+          <h2 class="text-2xl font-semibold">Please withdrow</h2>
+          <div class="mt-4">
+            <input
+              id="withdrow-input"
+              class="w-3/4 px-2 block border border-gray-400 rounded mb-4"
+              type="text"
+              placeholder="$ amount you want to withdrow "
+            />
+            <button
+              id="withdrow-btn"
+              class="bg-yellow-500 px-4 py-2 font-semibold text-white rounded"
+            >
+              withdrow
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/banking.js"></script>
+  </body>
+</html>

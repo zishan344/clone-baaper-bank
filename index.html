@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login baaper bank</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-semibold mt-16 text-center">
+        wellcome to my <span class="text-green-400"> baaper bank</span>!!!!
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto mt-8">
+      <section class="bg-green-500 p-8 rounded">
+        <h1 class="text-4xl font-semibold">Pls Login</h1>
+        <div class="mt-4">
+          <input
+            class="border block border-gray-400 rounded w-3/4 mb-4 px-2"
+            id="user-email"
+            type="email"
+            placeholder="Your Email"
+          />
+          <input
+            class="border block border-gray-400 rounded w-3/4 mb-4 px-2"
+            id="user-password"
+            type="password"
+            placeholder="Your Password"
+          />
+          <button
+            id="login-btn"
+            class="bg-yellow-500 px-4 py-2 font-semibold text-white rounded"
+          >
+            Login
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./js/login.js"></script>
+  </body>
+</html>
